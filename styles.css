@@ -411,3 +411,19 @@ main {
     display: none;
   }
 }
+
+.lang-checkbox {
+  display: none;
+}
+/*Para meni nav multi/lenguage*/
+.txt-es { display: block; }
+.txt-en { display: none; }
+
+.btn-es { font-weight: bold; opacity: 1; }
+.btn-en { font-weight: normal; opacity: 0.6; }
+
+.lang-checkbox:checked ~ .btn-es { font-weight: normal; opacity: 0.6; }
+.lang-checkbox:checked ~ .btn-en { font-weight: bold; opacity: 1; }
+
+.lang-checkbox:checked ~ main .txt-es { display: none; }
+.lang-checkbox:checked ~ main .txt-en { display: block; }
